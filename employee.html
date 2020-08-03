@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+        box-sizing: border-box;
+        }
+
+        /* Add padding to containers */
+        .container {
+         padding: 16px;
+         background-color: white;
+        }
+        .required
+        {
+        color: red;
+        }
+        .container1 input{
+            /* width: 20%; */
+            height: 50px;
+            padding: 16px;
+         background-color: white;
+        }
+        .container2 input{
+            /* width: 40%; */
+            height: 50px;
+            padding: 16px;
+         background-color: white;
+        }
+        input[type=text], input[type=date] {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+        }
+        textarea{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <p><b>INFINION TECHNOLOGIES Employee Goal Setting Form</b> </p>
+    <p><u><b>Guidelines</b></u> <br> <br>
+    This form is used to set goals for the year and aimed at ensuring employee's efforts are focused, value driven and aligned to the goal of the organization for the year under reveiew.
+    <br> 
+    </p>
+    <h3>Employee Information</h3>
+    <form action="" method="POST">
+        <div class="container1">
+            <label for="firstName">First Name</label> <span class="required">*</span>
+            <input type="text" name="firstName" required="required" class="form-control">
+        
+            <label for="lastname">Middle Name: </label> 
+            <input class="form-control" name="middleName" type="text">
+
+            <label for="lastname">Last Name: </label> <span class="required">*</span>
+            <input name="lastName" type="text" required="required" class="form-control">
+        </div> <br> <br>
+
+        <div class="container2">
+            <label for="staffId">Staff ID</label> <span class="required">*</span>
+            <input type="text" name="staffId" required="required" class="form-control">
+        
+            <label for="joblevel">Job Level</label> <span class="required">*</span>
+            <input type="text" name="joblevel" required="required" class="form-control">
+        
+        </div> <br><br>
+
+        <div class="container2">
+            <label for="unit">Unit</label> <span class="required">*</span>
+            <input type="text" name="staffId" required="required" class="form-control">
+        
+            <label for="supervisorname">Supervisor Name</label> <span class="required">*</span>
+            <input type="text" name="supervisorname" required="required" class="form-control">
+        
+        </div> <br>
+    
+
+    <h3> Goal Information</h3>
+    
+        <div class="container2">
+
+        <label for="from">Form</label> <span class="required">*</span>
+        <input type="date" id="from" name="from"  required="required" class="form-control">
+
+        <label for="to">To</label> <span class="required">*</span>
+        <input type="date" id="to" name="to"  required="required" class="form-control">
+
+    </div> <br>
+</form>
+
+    <h3>Goals</h3>
+    <form>
+    <div class="container4">
+
+    <label for="Goals" >Goals</label> 
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+
+    <label for="accomplished">Specific Task to be accomplished</label> 
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+
+    <label for="achievement">Achievement</label> 
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+
+    </div>
+
+    </form>
+
+    <h3>Sign Off Information</h3>
+    <form action="">
+        <div class="container5">
+            <label for="appraisee">Appraisee(Employee)</label> <span class="required">*</span>
+            <input type="text" placeholder="email">
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+
+        <div class="container5">
+            <label for="appraiser">Appraiser(Team Lead)</label> <span class="required">*</span>
+            <input type="text" placeholder="email">
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+
+        <div class="container5">
+            <label for="Reviewer">Reviewer</label> <span class="required">*</span>
+            <input type="text" placeholder="email">
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+        <button class="btn-small btn-primary shift-center" id="submit">Submit</button>
+
+    </form>
+</body>
+</html>
